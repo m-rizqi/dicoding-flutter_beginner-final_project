@@ -1,33 +1,149 @@
+import 'package:final_project_dicoding/View/MainView.dart';
 import 'package:final_project_dicoding/model/Recipe.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
-class ShoppingFragment extends StatelessWidget {
+
+class ShoppingFragment extends StatefulWidget {
   final Recipe? recipe;
   ShoppingFragment({Key? key, required this.recipe}) : super(key: key);
 
   @override
+  _ShoppingFragmentState createState() =>
+      _ShoppingFragmentState(recipe: this.recipe);
+}
+
+class _ShoppingFragmentState extends State<ShoppingFragment> {
+  final Recipe? recipe;
+  _ShoppingFragmentState({required this.recipe});
+
+  Future<bool> willPopBack() async {
+    streamController.add(2);
+    return true;
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Container(
-        child: Column(
-          children: [
-            SizedBox(
-              height: 200,
-              width: double.infinity,
-              child: Carousel(
-                dotSize: 5,
-                dotSpacing: 15,
-                indicatorBgPadding: 5,
-                images: [
-                  Image.asset('images/market1.jpg',fit: BoxFit.cover,),
-                  Image.asset('images/vegetable1.jpg',fit: BoxFit.cover,),
-                  Image.asset('images/vegetable2.jpg',fit: BoxFit.cover,),
-                ],
-              ),
+    var _crossAxisSpacing = 2;
+    var _screenWidth = MediaQuery.of(context).size.width;
+    var _crossAxisCount = 2;
+    var _width = (_screenWidth - ((_crossAxisCount - 1) * _crossAxisSpacing)) /
+        _crossAxisCount;
+    var cellHeight = 35;
+    var _aspectRatio = _width / cellHeight;
+    List<String> ingredientKeys = recipe?.ingredients.keys.toList() ?? [];
+    List<bool> checked = List.filled(ingredientKeys.length, false);
+    return WillPopScope(
+        onWillPop: willPopBack,
+        child: SingleChildScrollView(
+          child: Container(
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 200,
+                  width: double.infinity,
+                  child: Carousel(
+                    dotSize: 5,
+                    dotSpacing: 15,
+                    indicatorBgPadding: 5,
+                    images: [
+                      Image.asset(
+                        'images/market1.jpg',
+                        fit: BoxFit.cover,
+                      ),
+                      Image.asset(
+                        'images/vegetable1.jpg',
+                        fit: BoxFit.cover,
+                      ),
+                      Image.asset(
+                        'images/vegetable2.jpg',
+                        fit: BoxFit.cover,
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(15),
+                  child: Column(
+                    children: [
+                      Text(
+                        'Let’s Find The Items',
+                        style: TextStyle(
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w600,
+                            fontSize: 18),
+                      ),
+                      Container(
+                        height: 5,
+                        width: 130,
+                        color: Color.fromRGBO(98, 80, 59, 1),
+                      ),
+                      SizedBox(
+                        height: 12,
+                      ),
+                      Text(
+                        'get the ingredients in market\nor other place near to you',
+                        style: TextStyle(
+                            fontFamily: 'Roboto',
+                            fontWeight: FontWeight.w400,
+                            fontSize: 14,
+                            color: Color.fromRGBO(106, 106, 106, 1)),
+                      ),
+                      Container(
+                        child: GridView.builder(
+                          padding: EdgeInsets.only(
+                              left: 5.0, right: 5.0, top: 10, bottom: 10),
+                          shrinkWrap: true,
+                          itemCount: ingredientKeys.length,
+                          gridDelegate:
+                              SliverGridDelegateWithFixedCrossAxisCount(
+                                  crossAxisCount: _crossAxisCount,
+                                  childAspectRatio: _aspectRatio),
+                          itemBuilder: (context, index) {
+                            String e = ingredientKeys[index];
+                            return Row(
+                              children: [
+                                Container(
+                                  height: 10,
+                                  child: Checkbox(
+                                    onChanged: (bool? value) {
+                                      checked[index] = value!;
+                                    },
+                                    value: checked[index],
+                                    activeColor: Colors.amber,
+                                  ),
+                                ),
+                                Column(
+                                  children: [
+                                    Text(
+                                      e,
+                                      style: TextStyle(
+                                        fontFamily: 'Poppins',
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                    Text(
+                                      recipe?.ingredients[e] ?? '',
+                                      style: TextStyle(
+                                        fontFamily: 'Roboto',
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 12,
+                                        color: Color.fromRGBO(106, 106, 106, 1),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            );
+                          },
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
             ),
-          ],
-        ),
-      ),
-    );
+          ),
+        ));
   }
 }

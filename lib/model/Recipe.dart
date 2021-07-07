@@ -36,7 +36,7 @@ List<Recipe> allRecipes = [
       "Telur": "2 Buah"
     },
     image: "http://kbu-cdn.com/dk/wp-content/uploads/nasi-goreng-jawa.jpg",
-    video: "https://www.youtube.com/watch?v=Js9FXCkn798",
+    video: "Js9FXCkn798",
     rating: 4.5,
     eatTime: "Dinner",
     reviews: 1,
@@ -54,7 +54,7 @@ List<Recipe> allRecipes = [
     },
     image:
         "https://akcdn.detik.net.id/community/media/visual/2016/04/12/44fa09f5-1115-4a51-b4b1-c2142ee3f6ce_169.jpg?w=620",
-    video: "https://www.youtube.com/watch?v=SnLvbzTkYCs",
+    video: "SnLvbzTkYCs",
     rating: 4.2,
     eatTime: "Breakfast",
     reviews: 0.8,
@@ -73,7 +73,7 @@ List<Recipe> allRecipes = [
     },
     image:
         "https://cdn0-production-images-kly.akamaized.net/wnqaB2pAXY0eRjDJX5sCubSs_4I=/1280x720/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2410072/original/063662000_1542355013-1__2_.jpg",
-    video: "https://www.youtube.com/watch?v=NnjGjw7aWro",
+    video: "NnjGjw7aWro",
     rating: 4.4,
     eatTime: "Breakfast",
     reviews: 1.2,
@@ -96,7 +96,7 @@ List<Recipe> allRecipes = [
     },
     image:
         "https://assets.resepedia.id/assets/images/2020/06/1670854133051784-salad-sayur-640.jpg",
-    video: "https://youtu.be/wt8JsotYk2k",
+    video: "wt8JsotYk2k",
     rating: 4.1,
     eatTime: "Lunch",
     reviews: 1.2,
@@ -114,7 +114,7 @@ List<Recipe> allRecipes = [
     },
     image:
         "https://doktersehat.com/wp-content/uploads/2017/02/manfaat-jus-alpukat-doktersehat.jpg",
-    video: "https://www.youtube.com/watch?v=-7rL9RchKVk",
+    video: "-7rL9RchKVk",
     rating: 4.6,
     eatTime: "Lunch",
     reviews: 1.4,
@@ -138,7 +138,7 @@ List<Recipe> bestRecipeList = [
       "Telur": "2 Buah"
     },
     image: "http://kbu-cdn.com/dk/wp-content/uploads/nasi-goreng-jawa.jpg",
-    video: "https://www.youtube.com/watch?v=Js9FXCkn798",
+    video: "Js9FXCkn798",
     rating: 4.5,
     eatTime: "Dinner",
     reviews: 1,
@@ -159,7 +159,7 @@ List<Recipe> bestRecipeList = [
       "Telur": "2 Buah"
     },
     image: "http://kbu-cdn.com/dk/wp-content/uploads/nasi-goreng-jawa.jpg",
-    video: "https://www.youtube.com/watch?v=Js9FXCkn798",
+    video: "Js9FXCkn798",
     rating: 4.5,
     eatTime: "Dinner",
     reviews: 1,
@@ -180,7 +180,7 @@ List<Recipe> bestRecipeList = [
       "Telur": "2 Buah"
     },
     image: "http://kbu-cdn.com/dk/wp-content/uploads/nasi-goreng-jawa.jpg",
-    video: "https://www.youtube.com/watch?v=Js9FXCkn798",
+    video: "Js9FXCkn798",
     rating: 4.5,
     eatTime: "Dinner",
     reviews: 1,
@@ -201,7 +201,7 @@ List<Recipe> bestRecipeList = [
       "Telur": "2 Buah"
     },
     image: "http://kbu-cdn.com/dk/wp-content/uploads/nasi-goreng-jawa.jpg",
-    video: "https://www.youtube.com/watch?v=Js9FXCkn798",
+    video: "Js9FXCkn798",
     rating: 4.5,
     eatTime: "Dinner",
     reviews: 1,
@@ -222,7 +222,7 @@ List<Recipe> bestRecipeList = [
       "Telur": "2 Buah"
     },
     image: "http://kbu-cdn.com/dk/wp-content/uploads/nasi-goreng-jawa.jpg",
-    video: "https://www.youtube.com/watch?v=Js9FXCkn798",
+    video: "Js9FXCkn798",
     rating: 4.5,
     eatTime: "Dinner",
     reviews: 1,
@@ -243,7 +243,7 @@ List<Recipe> bestRecipeList = [
       "Telur": "2 Buah"
     },
     image: "http://kbu-cdn.com/dk/wp-content/uploads/nasi-goreng-jawa.jpg",
-    video: "https://www.youtube.com/watch?v=Js9FXCkn798",
+    video: "Js9FXCkn798",
     rating: 4.5,
     eatTime: "Dinner",
     reviews: 1,
@@ -264,7 +264,7 @@ List<Recipe> bestRecipeList = [
       "Telur": "2 Buah"
     },
     image: "http://kbu-cdn.com/dk/wp-content/uploads/nasi-goreng-jawa.jpg",
-    video: "https://www.youtube.com/watch?v=Js9FXCkn798",
+    video: "Js9FXCkn798",
     rating: 4.5,
     eatTime: "Dinner",
     reviews: 1,
@@ -285,7 +285,7 @@ List<Recipe> fastRecipeList = [
     },
     image:
         "https://akcdn.detik.net.id/community/media/visual/2016/04/12/44fa09f5-1115-4a51-b4b1-c2142ee3f6ce_169.jpg?w=620",
-    video: "https://www.youtube.com/watch?v=SnLvbzTkYCs",
+    video: "SnLvbzTkYCs",
     rating: 4.2,
     eatTime: "Breakfast",
     reviews: 0.8,
@@ -303,7 +303,7 @@ List<Recipe> fastRecipeList = [
     },
     image:
         "https://akcdn.detik.net.id/community/media/visual/2016/04/12/44fa09f5-1115-4a51-b4b1-c2142ee3f6ce_169.jpg?w=620",
-    video: "https://www.youtube.com/watch?v=SnLvbzTkYCs",
+    video: "SnLvbzTkYCs",
     rating: 4.2,
     eatTime: "Breakfast",
     reviews: 0.8,
@@ -321,7 +321,7 @@ List<Recipe> fastRecipeList = [
     },
     image:
         "https://akcdn.detik.net.id/community/media/visual/2016/04/12/44fa09f5-1115-4a51-b4b1-c2142ee3f6ce_169.jpg?w=620",
-    video: "https://www.youtube.com/watch?v=SnLvbzTkYCs",
+    video: "SnLvbzTkYCs",
     rating: 4.2,
     eatTime: "Breakfast",
     reviews: 0.8,
@@ -339,7 +339,7 @@ List<Recipe> fastRecipeList = [
     },
     image:
         "https://akcdn.detik.net.id/community/media/visual/2016/04/12/44fa09f5-1115-4a51-b4b1-c2142ee3f6ce_169.jpg?w=620",
-    video: "https://www.youtube.com/watch?v=SnLvbzTkYCs",
+    video: "SnLvbzTkYCs",
     rating: 4.2,
     eatTime: "Breakfast",
     reviews: 0.8,
@@ -357,7 +357,7 @@ List<Recipe> fastRecipeList = [
     },
     image:
         "https://akcdn.detik.net.id/community/media/visual/2016/04/12/44fa09f5-1115-4a51-b4b1-c2142ee3f6ce_169.jpg?w=620",
-    video: "https://www.youtube.com/watch?v=SnLvbzTkYCs",
+    video: "SnLvbzTkYCs",
     rating: 4.2,
     eatTime: "Breakfast",
     reviews: 0.8,
@@ -375,7 +375,7 @@ List<Recipe> fastRecipeList = [
     },
     image:
         "https://akcdn.detik.net.id/community/media/visual/2016/04/12/44fa09f5-1115-4a51-b4b1-c2142ee3f6ce_169.jpg?w=620",
-    video: "https://www.youtube.com/watch?v=SnLvbzTkYCs",
+    video: "SnLvbzTkYCs",
     rating: 4.2,
     eatTime: "Breakfast",
     reviews: 0.8,
@@ -393,7 +393,7 @@ List<Recipe> fastRecipeList = [
     },
     image:
         "https://akcdn.detik.net.id/community/media/visual/2016/04/12/44fa09f5-1115-4a51-b4b1-c2142ee3f6ce_169.jpg?w=620",
-    video: "https://www.youtube.com/watch?v=SnLvbzTkYCs",
+    video: "SnLvbzTkYCs",
     rating: 4.2,
     eatTime: "Breakfast",
     reviews: 0.8,
@@ -415,7 +415,7 @@ List<Recipe> easyRecipeList = [
     },
     image:
         "https://cdn0-production-images-kly.akamaized.net/wnqaB2pAXY0eRjDJX5sCubSs_4I=/1280x720/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2410072/original/063662000_1542355013-1__2_.jpg",
-    video: "https://www.youtube.com/watch?v=NnjGjw7aWro",
+    video: "NnjGjw7aWro",
     rating: 4.4,
     eatTime: "Breakfast",
     reviews: 1.2,
@@ -434,7 +434,7 @@ List<Recipe> easyRecipeList = [
     },
     image:
         "https://cdn0-production-images-kly.akamaized.net/wnqaB2pAXY0eRjDJX5sCubSs_4I=/1280x720/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2410072/original/063662000_1542355013-1__2_.jpg",
-    video: "https://www.youtube.com/watch?v=NnjGjw7aWro",
+    video: "NnjGjw7aWro",
     rating: 4.4,
     eatTime: "Breakfast",
     reviews: 1.2,
@@ -453,7 +453,7 @@ List<Recipe> easyRecipeList = [
     },
     image:
         "https://cdn0-production-images-kly.akamaized.net/wnqaB2pAXY0eRjDJX5sCubSs_4I=/1280x720/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2410072/original/063662000_1542355013-1__2_.jpg",
-    video: "https://www.youtube.com/watch?v=NnjGjw7aWro",
+    video: "NnjGjw7aWro",
     rating: 4.4,
     eatTime: "Breakfast",
     reviews: 1.2,
@@ -472,7 +472,7 @@ List<Recipe> easyRecipeList = [
     },
     image:
         "https://cdn0-production-images-kly.akamaized.net/wnqaB2pAXY0eRjDJX5sCubSs_4I=/1280x720/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2410072/original/063662000_1542355013-1__2_.jpg",
-    video: "https://www.youtube.com/watch?v=NnjGjw7aWro",
+    video: "NnjGjw7aWro",
     rating: 4.4,
     eatTime: "Breakfast",
     reviews: 1.2,
@@ -491,7 +491,7 @@ List<Recipe> easyRecipeList = [
     },
     image:
         "https://cdn0-production-images-kly.akamaized.net/wnqaB2pAXY0eRjDJX5sCubSs_4I=/1280x720/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2410072/original/063662000_1542355013-1__2_.jpg",
-    video: "https://www.youtube.com/watch?v=NnjGjw7aWro",
+    video: "NnjGjw7aWro",
     rating: 4.4,
     eatTime: "Breakfast",
     reviews: 1.2,
@@ -510,7 +510,7 @@ List<Recipe> easyRecipeList = [
     },
     image:
         "https://cdn0-production-images-kly.akamaized.net/wnqaB2pAXY0eRjDJX5sCubSs_4I=/1280x720/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2410072/original/063662000_1542355013-1__2_.jpg",
-    video: "https://www.youtube.com/watch?v=NnjGjw7aWro",
+    video: "NnjGjw7aWro",
     rating: 4.4,
     eatTime: "Breakfast",
     reviews: 1.2,
@@ -529,7 +529,7 @@ List<Recipe> easyRecipeList = [
     },
     image:
         "https://cdn0-production-images-kly.akamaized.net/wnqaB2pAXY0eRjDJX5sCubSs_4I=/1280x720/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2410072/original/063662000_1542355013-1__2_.jpg",
-    video: "https://www.youtube.com/watch?v=NnjGjw7aWro",
+    video: "NnjGjw7aWro",
     rating: 4.4,
     eatTime: "Breakfast",
     reviews: 1.2,
@@ -555,7 +555,7 @@ List<Recipe> veganRecipeList = [
     },
     image:
         "https://assets.resepedia.id/assets/images/2020/06/1670854133051784-salad-sayur-640.jpg",
-    video: "https://youtu.be/wt8JsotYk2k",
+    video: "wt8JsotYk2k",
     rating: 4.1,
     eatTime: "Lunch",
     reviews: 1.2,
@@ -578,7 +578,7 @@ List<Recipe> veganRecipeList = [
     },
     image:
         "https://assets.resepedia.id/assets/images/2020/06/1670854133051784-salad-sayur-640.jpg",
-    video: "https://youtu.be/wt8JsotYk2k",
+    video: "wt8JsotYk2k",
     rating: 4.1,
     eatTime: "Lunch",
     reviews: 1.2,
@@ -601,7 +601,7 @@ List<Recipe> veganRecipeList = [
     },
     image:
         "https://assets.resepedia.id/assets/images/2020/06/1670854133051784-salad-sayur-640.jpg",
-    video: "https://youtu.be/wt8JsotYk2k",
+    video: "wt8JsotYk2k",
     rating: 4.1,
     eatTime: "Lunch",
     reviews: 1.2,
@@ -624,7 +624,7 @@ List<Recipe> veganRecipeList = [
     },
     image:
         "https://assets.resepedia.id/assets/images/2020/06/1670854133051784-salad-sayur-640.jpg",
-    video: "https://youtu.be/wt8JsotYk2k",
+    video: "wt8JsotYk2k",
     rating: 4.1,
     eatTime: "Lunch",
     reviews: 1.2,
@@ -647,7 +647,7 @@ List<Recipe> veganRecipeList = [
     },
     image:
         "https://assets.resepedia.id/assets/images/2020/06/1670854133051784-salad-sayur-640.jpg",
-    video: "https://youtu.be/wt8JsotYk2k",
+    video: "wt8JsotYk2k",
     rating: 4.1,
     eatTime: "Lunch",
     reviews: 1.2,
@@ -670,7 +670,7 @@ List<Recipe> veganRecipeList = [
     },
     image:
         "https://assets.resepedia.id/assets/images/2020/06/1670854133051784-salad-sayur-640.jpg",
-    video: "https://youtu.be/wt8JsotYk2k",
+    video: "wt8JsotYk2k",
     rating: 4.1,
     eatTime: "Lunch",
     reviews: 1.2,
@@ -693,7 +693,7 @@ List<Recipe> veganRecipeList = [
     },
     image:
         "https://assets.resepedia.id/assets/images/2020/06/1670854133051784-salad-sayur-640.jpg",
-    video: "https://youtu.be/wt8JsotYk2k",
+    video: "wt8JsotYk2k",
     rating: 4.1,
     eatTime: "Lunch",
     reviews: 1.2,
@@ -714,7 +714,7 @@ List<Recipe> beverageRecipeList = [
     },
     image:
         "https://doktersehat.com/wp-content/uploads/2017/02/manfaat-jus-alpukat-doktersehat.jpg",
-    video: "https://www.youtube.com/watch?v=-7rL9RchKVk",
+    video: "-7rL9RchKVk",
     rating: 4.6,
     eatTime: "Lunch",
     reviews: 1.4,
@@ -732,7 +732,7 @@ List<Recipe> beverageRecipeList = [
     },
     image:
         "https://doktersehat.com/wp-content/uploads/2017/02/manfaat-jus-alpukat-doktersehat.jpg",
-    video: "https://www.youtube.com/watch?v=-7rL9RchKVk",
+    video: "-7rL9RchKVk",
     rating: 4.6,
     eatTime: "Lunch",
     reviews: 1.4,
@@ -750,7 +750,7 @@ List<Recipe> beverageRecipeList = [
     },
     image:
         "https://doktersehat.com/wp-content/uploads/2017/02/manfaat-jus-alpukat-doktersehat.jpg",
-    video: "https://www.youtube.com/watch?v=-7rL9RchKVk",
+    video: "-7rL9RchKVk",
     rating: 4.6,
     eatTime: "Lunch",
     reviews: 1.4,
@@ -768,7 +768,7 @@ List<Recipe> beverageRecipeList = [
     },
     image:
         "https://doktersehat.com/wp-content/uploads/2017/02/manfaat-jus-alpukat-doktersehat.jpg",
-    video: "https://www.youtube.com/watch?v=-7rL9RchKVk",
+    video: "-7rL9RchKVk",
     rating: 4.6,
     eatTime: "Lunch",
     reviews: 1.4,
@@ -786,7 +786,7 @@ List<Recipe> beverageRecipeList = [
     },
     image:
         "https://doktersehat.com/wp-content/uploads/2017/02/manfaat-jus-alpukat-doktersehat.jpg",
-    video: "https://www.youtube.com/watch?v=-7rL9RchKVk",
+    video: "-7rL9RchKVk",
     rating: 4.6,
     eatTime: "Lunch",
     reviews: 1.4,
@@ -804,7 +804,7 @@ List<Recipe> beverageRecipeList = [
     },
     image:
         "https://doktersehat.com/wp-content/uploads/2017/02/manfaat-jus-alpukat-doktersehat.jpg",
-    video: "https://www.youtube.com/watch?v=-7rL9RchKVk",
+    video: "-7rL9RchKVk",
     rating: 4.6,
     eatTime: "Lunch",
     reviews: 1.4,
@@ -822,7 +822,7 @@ List<Recipe> beverageRecipeList = [
     },
     image:
         "https://doktersehat.com/wp-content/uploads/2017/02/manfaat-jus-alpukat-doktersehat.jpg",
-    video: "https://www.youtube.com/watch?v=-7rL9RchKVk",
+    video: "-7rL9RchKVk",
     rating: 4.6,
     eatTime: "Lunch",
     reviews: 1.4,

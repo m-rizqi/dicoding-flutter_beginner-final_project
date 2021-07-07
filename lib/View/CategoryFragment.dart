@@ -1,5 +1,6 @@
 import 'package:final_project_dicoding/View/DetailFragment.dart';
 import 'package:final_project_dicoding/View/MainView.dart';
+import 'package:final_project_dicoding/controller/RecipeSearchController.dart';
 import 'package:final_project_dicoding/model/Recipe.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -98,7 +99,10 @@ class _CategoryFragmentState extends State<CategoryFragment> {
                 ),
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  showSearch(
+                      context: context, delegate: RecipeSearchController());
+                },
                 icon: Container(
                   margin: EdgeInsets.only(right: 5),
                   child: Icon(

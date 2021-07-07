@@ -1,5 +1,7 @@
 import 'package:final_project_dicoding/View/CategoryFragment.dart';
+import 'package:final_project_dicoding/View/CookingFragment.dart';
 import 'package:final_project_dicoding/View/DetailFragment.dart';
+import 'package:final_project_dicoding/View/Finish.dart';
 import 'package:final_project_dicoding/View/ShoppingFragment.dart';
 import 'package:final_project_dicoding/model/Recipe.dart';
 import 'package:flutter/material.dart';
@@ -61,7 +63,8 @@ class _MainViewState extends State<MainView> {
   void fragmentSetState(int index) {
     int fragmentIndex = 0;
     Recipe? recipe = null;
-    if (index == 3) {
+    if (index == 0) {
+    } else if (index == 2 || index == 3 || index == 4) {
       fragmentIndex = index - 1;
     } else {
       String key = index.toString();
@@ -75,110 +78,148 @@ class _MainViewState extends State<MainView> {
     }
     List<Widget> fragmentList = [
       CategoryFragment(),
-      DetailFragment(recipe: recipe),
-      ShoppingFragment(recipe: recipe),
+      DetailFragment(recipe: publicRecipe),
+      ShoppingFragment(recipe: publicRecipe),
+      CookingFragment(
+        recipe: publicRecipe,
+      ),
     ];
 
     var steps = [1, 1, 2, 3];
 
-  List<Widget> bottomContentList = [
-    Column(
-      children: [
-        Text(
-          'Choose The Food',
-          style: TextStyle(
-            fontFamily: 'Poppins',
-            fontWeight: FontWeight.w500,
-            fontSize: 18,
-          ),
-        ),
-        Text(
-          'there is a lot menu there,\nwich one do you want ?',
-          style: TextStyle(
-            fontFamily: 'Poppins',
-            fontWeight: FontWeight.w400,
-            fontSize: 12,
-          ),
-          textAlign: TextAlign.center,
-        ),
-      ],
-    ),
-    Column(
-      children: [
-        Text(
-          'Wanna Try This ?',
-          style: TextStyle(
-            fontFamily: 'Poppins',
-            fontWeight: FontWeight.w500,
-            fontSize: 18,
-          ),
-        ),
-      ],
-    ),
-    Column(
-      children: [
-        Text(
-          'Let,s Go Shooping',
-          style: TextStyle(
-            fontFamily: 'Poppins',
-            fontWeight: FontWeight.w500,
-            fontSize: 18,
-          ),
-        ),
-        Text(
-          'make sure you get all',
-          style: TextStyle(
-            fontFamily: 'Poppins',
-            fontWeight: FontWeight.w400,
-            fontSize: 12,
-          ),
-          textAlign: TextAlign.center,
-        ),
-      ],
-    ),
-  ];
-
-  List<Widget> bottomButtonList = [
-  Container(),
-  InkWell(
-    onTap: () {
-      streamController.add(3);
-    },
-    child: Container(
-      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(50),
-        color: Color.fromRGBO(237, 119, 38, 1),
-      ),
-      child: Row(
+    List<Widget> bottomContentList = [
+      Column(
         children: [
           Text(
-            'NEXT',
+            'Choose The Food',
             style: TextStyle(
-                fontWeight: FontWeight.w500,
-                fontSize: 14,
-                fontFamily: 'Poppins'),
+              fontFamily: 'Poppins',
+              fontWeight: FontWeight.w500,
+              fontSize: 18,
+            ),
           ),
-          Icon(
-            FontAwesomeIcons.arrowRight,
-            size: 10,
+          Text(
+            'there is a lot menu there,\nwich one do you want ?',
+            style: TextStyle(
+              fontFamily: 'Poppins',
+              fontWeight: FontWeight.w400,
+              fontSize: 12,
+            ),
+            textAlign: TextAlign.center,
           ),
         ],
       ),
-    ),
-  ),
-  CircleAvatar(
-    backgroundColor: Colors.amber,
-    child: IconButton(
-      onPressed: (){},
-      icon: Icon(
-        FontAwesomeIcons.arrowRight,
-        color: Colors.black,
-        size: 20,
+      Column(
+        children: [
+          Text(
+            'Wanna Try This ?',
+            style: TextStyle(
+              fontFamily: 'Poppins',
+              fontWeight: FontWeight.w500,
+              fontSize: 18,
+            ),
+          ),
+        ],
       ),
-    ),
-  ),
-];
+      Column(
+        children: [
+          Text(
+            'Let,s Go Shooping',
+            style: TextStyle(
+              fontFamily: 'Poppins',
+              fontWeight: FontWeight.w500,
+              fontSize: 18,
+            ),
+          ),
+          Text(
+            'make sure you get all',
+            style: TextStyle(
+              fontFamily: 'Poppins',
+              fontWeight: FontWeight.w400,
+              fontSize: 12,
+            ),
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
+      Column(
+        children: [
+          Text(
+            'Wanna Try This ?',
+            style: TextStyle(
+              fontFamily: 'Poppins',
+              fontWeight: FontWeight.w500,
+              fontSize: 18,
+            ),
+          ),
+          InkWell(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return Finsih(recipe: recipe);
+              }));
+            },
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(50),
+                color: Color.fromRGBO(68, 193, 141, 1),
+              ),
+              child: Text(
+                'FINISH',
+                style: TextStyle(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 18,
+                    fontFamily: 'Poppins',
+                    color: Colors.white),
+              ),
+            ),
+          ),
+        ],
+      ),
+    ];
+
+    List<Widget> bottomButtonList = [
+      Container(),
+      InkWell(
+        onTap: () {
+          streamController.add(3);
+        },
+        child: Container(
+          padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(50),
+            color: Color.fromRGBO(237, 119, 38, 1),
+          ),
+          child: Row(
+            children: [
+              Text(
+                'NEXT',
+                style: TextStyle(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 14,
+                    fontFamily: 'Poppins'),
+              ),
+              Icon(
+                FontAwesomeIcons.arrowRight,
+                size: 10,
+              ),
+            ],
+          ),
+        ),
+      ),
+      CircleAvatar(
+        backgroundColor: Colors.amber,
+        child: IconButton(
+          onPressed: () {},
+          icon: Icon(
+            FontAwesomeIcons.arrowRight,
+            color: Colors.black,
+            size: 20,
+          ),
+        ),
+      ),
+      Container(),
+    ];
 
     setState(() {
       fragment = fragmentList[fragmentIndex];
@@ -188,11 +229,15 @@ class _MainViewState extends State<MainView> {
     });
   }
 
+  void settingFragment() {
+    if (widget.recipe != null) {
+      streamController.add(2);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
-    fragment = widget.recipe == null
-        ? fragment
-        : DetailFragment(recipe: widget.recipe);
+    settingFragment();
     double widthScreen = MediaQuery.of(context).size.width;
     double heightScreen = MediaQuery.of(context).size.height;
     return Scaffold(

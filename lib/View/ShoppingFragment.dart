@@ -14,7 +14,12 @@ class ShoppingFragment extends StatefulWidget {
 
 class _ShoppingFragmentState extends State<ShoppingFragment> {
   final Recipe? recipe;
-  _ShoppingFragmentState({required this.recipe});
+  List<String>? ingredientKeys;
+  List<bool>? checked;
+  _ShoppingFragmentState({required this.recipe}){
+    ingredientKeys = recipe?.ingredients.keys.toList() ?? [];
+    checked = List.filled(ingredientKeys?.length ?? 0, false);
+  }
 
   Future<bool> willPopBack() async {
     streamController.add(2);
@@ -28,10 +33,8 @@ class _ShoppingFragmentState extends State<ShoppingFragment> {
     var _crossAxisCount = 2;
     var _width = (_screenWidth - ((_crossAxisCount - 1) * _crossAxisSpacing)) /
         _crossAxisCount;
-    var cellHeight = 35;
+    var cellHeight = 50;
     var _aspectRatio = _width / cellHeight;
-    List<String> ingredientKeys = recipe?.ingredients.keys.toList() ?? [];
-    List<bool> checked = List.filled(ingredientKeys.length, false);
     return WillPopScope(
         onWillPop: willPopBack,
         child: SingleChildScrollView(
@@ -64,6 +67,7 @@ class _ShoppingFragmentState extends State<ShoppingFragment> {
                 Container(
                   margin: EdgeInsets.all(15),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         'Let’s Find The Items',
@@ -93,26 +97,32 @@ class _ShoppingFragmentState extends State<ShoppingFragment> {
                           padding: EdgeInsets.only(
                               left: 5.0, right: 5.0, top: 10, bottom: 10),
                           shrinkWrap: true,
-                          itemCount: ingredientKeys.length,
+                          itemCount: ingredientKeys?.length ?? 0,
                           gridDelegate:
                               SliverGridDelegateWithFixedCrossAxisCount(
                                   crossAxisCount: _crossAxisCount,
                                   childAspectRatio: _aspectRatio),
                           itemBuilder: (context, index) {
-                            String e = ingredientKeys[index];
+                            String e = ingredientKeys?[index]?? '';
                             return Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Container(
                                   height: 10,
                                   child: Checkbox(
                                     onChanged: (bool? value) {
-                                      checked[index] = value!;
+                                      setState(() {
+                                        checked?[index] = value??false;
+                                      });
                                     },
-                                    value: checked[index],
+                                    value: checked?[index],
                                     activeColor: Colors.amber,
+                                    checkColor: Colors.black,
                                   ),
                                 ),
                                 Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
                                       e,

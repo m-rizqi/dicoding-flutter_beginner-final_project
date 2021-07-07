@@ -34,18 +34,19 @@ class RecipeSearchController extends SearchDelegate<Recipe> {
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    final recipeList = query.isEmpty
-        ? allRecipes
-        : allRecipes
-            .where((element) => element.name.startsWith(query))
-            .toList();
+    var recipeList = [];
+    if (query.isEmpty) {
+      recipeList = allRecipes;
+    } else {
+      recipeList = allRecipes.where((element) => element.name.toLowerCase().trim().contains(query)).toList();
+    }
     return ListView.builder(
       itemCount: recipeList.length,
       itemBuilder: (context, index) {
         final recipe = recipeList[index];
         return Container(
           height: 100,
-          margin: EdgeInsets.symmetric(vertical: 4),
+          margin: EdgeInsets.symmetric(vertical: 2),
           child: InkWell(
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -65,9 +66,9 @@ class RecipeSearchController extends SearchDelegate<Recipe> {
                   color: Colors.white,
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.25),
-                      blurRadius: 5,
-                      offset: Offset(3, 3),
+                      color: Colors.black.withOpacity(0.10),
+                      blurRadius: 2,
+                      offset: Offset(1, 1),
                     ),
                   ],
                 ),

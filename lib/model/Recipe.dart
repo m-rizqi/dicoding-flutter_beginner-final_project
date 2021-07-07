@@ -42,6 +42,54 @@ List<Recipe> allRecipes = [
     reviews: 1,
   ),
   new Recipe(
+    name: 'Rendang',
+    description:
+        'Resep rendang sapi ini bisa jadi rekomendasi untuk membuat sajian rendah nikmat khas Padang. Rendang juga menjadi menu wajib saat Lebaran tiba. Memasak rendang juga membutuhkan kesabaran untuk mendapatkan hasil yang maksimal',
+    ingredients: {
+      "Daging Sapi": "1 Kg",
+      "Santan": "Secukupnya",
+      "Daun Jeruk": "4 Lembar",
+      "Serai": "3 Batang",
+      "Minyak Goreng": "100 ml",
+      "Bumbu Rendang": "Secukupnya",
+      "Bawang Merah": "60 gram",
+      "Bawang Putih": "50 gram",
+      "Lengkuas": "100 gram",
+      "Cengkeh": "2 gram"
+    },
+    image: "https://cdn-2.tstatic.net/tribunnews/foto/bank/images/resep-rendang.jpg",
+    video: "oOQa8B1adO8",
+    rating: 4.8,
+    eatTime: "Dinner",
+    reviews: 2,
+  ),
+  new Recipe(
+    name: 'Nasi Kuning',
+    description:
+        'Nasi kuning ini dapat disantap dengan aneka lauk pendamping. Beberapa lauk seperti ayam goreng, telur balado, dan sambal goreng hati bisa menjadi pilihannya.',
+    ingredients: {
+      "Beras": "1 Liter",
+      "Kunyit": "3 Ruas",
+      "Daun Salam": "5 Lembar",
+      "Daun Pandan": "4 Lembar",
+      "Daun Jeruk": "3 Lembar",
+      "Serai": "3 Batang",
+      "Minyak Goreng": "100 ml",
+      "Bumbu Rendang": "Secukupnya",
+      "Bawang Merah": "8 Butir",
+      "Bawang Putih": "3 Siung",
+      "Santan": "1 Liter",
+      "Gula Pasir": "1 Sendok Teh",
+      "Garam": "1 Sendok Makan"
+    },
+    image: "https://ik.imagekit.io/10tn5i0v1n/article/187a3227fc914f00919d3db808e25f42.jpeg",
+    video: "WIRvYIIRMUs",
+    rating: 4.3,
+    eatTime: "Lunch",
+    reviews: 1,
+  ),
+  
+  new Recipe(
     name: "Oatmeal Buah",
     description:
         "Oatmeal merupakan biji-bijian yang kaya vitamin, mineral, serat, antioksidan, dan bebas gluten. Kaya kandungan gizi serta memberikan rasa kenyang menjadikan oatmeal sebagai menu sarapan ideal selama masa diet",
@@ -59,6 +107,40 @@ List<Recipe> allRecipes = [
     eatTime: "Breakfast",
     reviews: 0.8,
   ),
+  new Recipe(
+    name: "Roti Bakar",
+    description:
+        "Selain memiliki rasa yang enak dan mudah diolah, roti juga memiliki manfaat untuk memberikan energi. Umumnya roti tawar putih terdiri dari tepung gula dan telur, namun kamu juga bisa menambah bahan olahan lainnya sesuai selera. Menu roti bakar sangat cocok dikonsumsi pada pagi hari, karena setiap orang yang butuh makanan yang bergizi dan cukup agar memiliki energi yang cukup untuk menjalani aktivitas sehari-hari.",
+    ingredients: {
+      "Roti Tawar": "2 Lembar",
+      "Mentega": "Secukupnya",
+      "Selai": "Secukupnya",
+    },
+    image:
+        "https://i0.wp.com/www.pengusahasukses.com/wp-content/uploads/2016/06/peluang-bisnis-roti-bakar-dan-analisa-usahanya-pengusaha-sukses.jpg?resize=500%2C332",
+    video: "A5nii8LrQBs",
+    rating: 4.0,
+    eatTime: "Breakfast",
+    reviews: 0.7,
+  ),
+  new Recipe(
+    name: "Spaghetti",
+    description:
+        "spaghetti sangatlah beragam dan memiliki cita rasa yang unik. Beberapa jenis resep spaghetti tersebut seperti bolognese, carbonara, aglio olio, serta berbagai resep spaghetti lainnya. Ternyata untuk mengolahnya juga cukup mudah dan tidak perlu waktu lama.",
+    ingredients: {
+      "Spaghetti": "500 gram",
+      "Saus Tomat": "7 Buah",
+      "Daun Bawang": "2 Helai",
+      "Keju": "Secukupnya",
+    },
+    image:
+        "https://egafood.co.id/wp-content/uploads/2018/10/Spaghetti-Bolognese.jpg",
+    video: "dpn4HBchnmE",
+    rating: 4.2,
+    eatTime: "Breakfast",
+    reviews: 0.9,
+  ),
+
   new Recipe(
     name: "Telur Dadar",
     description:
@@ -78,6 +160,43 @@ List<Recipe> allRecipes = [
     eatTime: "Breakfast",
     reviews: 1.2,
   ),
+  new Recipe(
+    name: "Choco Cookies",
+    description:
+        "Cookies cocok dijadikan stok makanan, biar gak perlu sering-sering keluar rumah. Biar gak bosan makan sereal polosan, kamu bisa mengkreasikannya menjadi olahan yang lebih menarik.",
+    ingredients: {
+      "Sereal": "50 gram",
+      "Cokelat": "25 gram",
+      "Gula": "25 gram",
+      "Mentega": "50 gram",
+      "Tepung Maizena": "15 gram",
+      "Tepung Terigu": "15 gram",
+    },
+    image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9zXVgP17VzCbYv2XuH2up5ScRgUADVRu-Iw&usqp=CAU",
+    video: "W8HSGqi__Is",
+    rating: 3.8,
+    eatTime: "Snack",
+    reviews: 1,
+  ),
+  new Recipe(
+    name: "Sereal",
+    description:
+        "Sereal cocok dijadikan stok makanan, biar gak perlu sering-sering keluar rumah. Biar gak bosan makan sereal polosan, kamu bisa mengkreasikannya menjadi olahan yang lebih menarik.",
+    ingredients: {
+      "Sereal corn flakes": "50 gram",
+      "Sereal Chocochips": "25 gram",
+      "Sereal Fitnes Bar": "25 gram",
+      "Susu": "500 ml",
+    },
+    image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc_tPY_yXOHXOKOHx161QDW9PCzJuck-76L6DhdC85I8EYsfP5yK-QJzX80Glmyu5v2oA&usqp=CAU",
+    video: "4_H5pJkUefs",
+    rating: 3.9,
+    eatTime: "BreakFast",
+    reviews: 1,
+  ),
+
   new Recipe(
     name: "Salad Sayur",
     description:
@@ -102,6 +221,30 @@ List<Recipe> allRecipes = [
     reviews: 1.2,
   ),
   new Recipe(
+    name: "Salad Buah",
+    description:
+        "Setelah menikmati makanan berat, kurang afdol rasanya kalau belum menyantap penutup mulut. Salah satu pencuci mulut favorit yang disukai banyak orang adalah salad.",
+    ingredients: {
+      "Daun Kol": "2 Lembar",
+      "Wortel": "1 Buah",
+      "Tomat": "1/2 Buah",
+      "Jagung Pipil": "5 Sendok Makan",
+      "Jeruk Nipis": "1 Buah",
+      "Bawang Bombay": "1/2 Buah",
+      "Mayonaise": "3 Sendok Makan",
+      "Gula": "1/4 Sendok Makan",
+      "Saus Tomat": "1 Sendok Makan",
+      "Garam": "Secukupnya"
+    },
+    image:
+        "https://awsimages.detik.net.id/community/media/visual/2020/12/24/salad-buah-segar.jpeg?w=700&q=90",
+    video: "3HtuTCqYPgk",
+    rating: 4.2,
+    eatTime: "Lunch",
+    reviews: 1.1,
+  ),
+  
+  new Recipe(
     name: "Jus Alpukat",
     description:
         "Alpukat merupakan salah satu buah yang sering dikonsumsi sehari-hari. Buah yang berbentuk unik ini mempunyai rasa manis dan tekstur yang super lembut. Biasanya buah alpukat kerap diberikan pada bayi yang mulai mendapatkan makanan pendamping ASI. Teksturnya yang sangat lembut dinilai ramah untuk pencernaan bayi yang belum berkembang sempurna.",
@@ -118,6 +261,40 @@ List<Recipe> allRecipes = [
     rating: 4.6,
     eatTime: "Lunch",
     reviews: 1.4,
+  ),
+  new Recipe(
+    name: "Es Degan",
+    description:
+        "Es kelapa merupakan salah satu es yang akrab untuk masyarakat Indonesia yang hidup di daerah tropis. Biasanya saat Ramadhan para pedagang menjajakan es kelapa di pinggir jalan raya. Harganya pun relatih murah, mulai dari Rp 5.000 hingga Rp 10.000 per satu gelas.",
+    ingredients: {
+      "Kelapa Hijau": "5 Butir",
+      "Gula Merah": "250 gram",
+      "Air": "200 ml",
+      "Es Batu": "Secukupnya",
+    },
+    image:
+        "https://asset.kompas.com/crops/LgGmDBxglevUdnCm4fWkEIkVy-U=/0x0:739x493/750x500/data/photo/2020/01/29/5e3187c1ac05f.jpg",
+    video: "nk_yUfrcGaA",
+    rating: 4.3,
+    eatTime: "Lunch",
+    reviews: 1.2,
+  ),
+  new Recipe(
+    name: "Jus Mangga",
+    description:
+        "Siapa yang tak suka dengan buah mangga. Bisa dipastikan, semua orang suka dengan buah mangga. Rasa buah mangga yang manis dan terkadang sedikit asam membuat buah mangga menjadi salah satu buah favorit. Selain bisa dinikmati dengan dimakan secara langsung, buah mangga juga bisa dinikmati menjadi beberapa olahan yang super lezat, segar dan pastinya sehat.",
+    ingredients: {
+      "Mangga": "2 Buah",
+      "Gula Pasir": "250 gram",
+      "Air": "200 ml",
+      "Es Batu": "Secukupnya",
+    },
+    image:
+        "https://asset.kompas.com/crops/LgGmDBxglevUdnCm4fWkEIkVy-U=/0x0:739x493/750x500/data/photo/2020/01/29/5e3187c1ac05f.jpg",
+    video: "nk_yUfrcGaA",
+    rating: 4.3,
+    eatTime: "Lunch",
+    reviews: 1.2,
   ),
 ];
 

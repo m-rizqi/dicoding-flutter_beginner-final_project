@@ -84,7 +84,6 @@ class _MainViewState extends State<MainView> {
         recipe: publicRecipe,
       ),
     ];
-
     var steps = [1, 1, 2, 3];
 
     List<Widget> bottomContentList = [
@@ -145,7 +144,7 @@ class _MainViewState extends State<MainView> {
       Column(
         children: [
           Text(
-            'Wanna Try This ?',
+            'Time To Cooking',
             style: TextStyle(
               fontFamily: 'Poppins',
               fontWeight: FontWeight.w500,
@@ -155,10 +154,12 @@ class _MainViewState extends State<MainView> {
           InkWell(
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return Finsih(recipe: recipe);
+                return Finish(recipe: publicRecipe);
               }));
             },
             child: Container(
+              alignment: Alignment.center,
+              width: 180,
               padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(50),
@@ -210,7 +211,9 @@ class _MainViewState extends State<MainView> {
       CircleAvatar(
         backgroundColor: Colors.amber,
         child: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            streamController.add(4);
+          },
           icon: Icon(
             FontAwesomeIcons.arrowRight,
             color: Colors.black,
@@ -218,7 +221,7 @@ class _MainViewState extends State<MainView> {
           ),
         ),
       ),
-      Container(),
+      Expanded(child: Container(),),
     ];
 
     setState(() {

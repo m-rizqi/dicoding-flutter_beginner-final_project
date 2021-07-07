@@ -1,15 +1,16 @@
 import 'package:final_project_dicoding/View/Home.dart';
+import 'package:final_project_dicoding/View/MainView.dart';
 import 'package:final_project_dicoding/model/Recipe.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class Finsih extends StatelessWidget {
+class Finish extends StatelessWidget {
   final Recipe? recipe;
-  Finsih({Key? key, this.recipe}) : super(key: key);
+  Finish({Key? key, this.recipe}) : super(key: key);
 
   Future<bool> willPopBack() async {
-    return true;
+    return false;
   }
 
   @override
@@ -29,10 +30,11 @@ class Finsih extends StatelessWidget {
           ),
           Center(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                   margin: EdgeInsets.only(bottom: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(50),
                     color: Colors.white,
@@ -56,15 +58,17 @@ class Finsih extends StatelessWidget {
                     width: 300,
                     height: 480,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(15)),
+                      borderRadius: BorderRadius.all(Radius.circular(40)),
                       color: Colors.white,
                     ),
                     child: Column(
                       children: [
                         Container(
-                          margin: EdgeInsets.only(top: 16),
+                          margin: EdgeInsets.only(
+                            top: 16,
+                          ),
                           child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
                                   'YOU ARE GREAT',
@@ -75,23 +79,27 @@ class Finsih extends StatelessWidget {
                                 ),
                                 SizedBox(
                                   width: 250,
-                                  height: 2,
+                                  height: 1,
+                                  child: Container(
+                                    color: Colors.black54,
+                                  ),
                                 ),
                               ]),
                         ),
                         Text(
-                          recipe!.name,
+                          recipe?.name ?? '',
                           style: TextStyle(
                               fontFamily: 'Poppins',
                               fontWeight: FontWeight.w500,
                               fontSize: 18),
                         ),
+                        SizedBox(height: 10),
                         Container(
                           margin: EdgeInsets.all(5),
-                          child: Image.network(recipe!.image),
+                          child: Image.network(recipe?.image ?? ''),
                         ),
                         Container(
-                          margin: EdgeInsets.all(5),
+                          margin: EdgeInsets.only(left: 5, top: 10),
                           width: double.infinity,
                           alignment: Alignment.centerLeft,
                           child: Text(
@@ -125,10 +133,33 @@ class Finsih extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          height: 50,
+                          height: 30,
                         ),
                         IconButton(
                             onPressed: () {
+                              step = 1;
+                              bottomButton = Container();
+                              bottomContent = Column(
+                                children: [
+                                  Text(
+                                    'Choose The Food',
+                                    style: TextStyle(
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                  Text(
+                                    'there is a lot menu there,\nwich one do you want ?',
+                                    style: TextStyle(
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 12,
+                                    ),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ],
+                              );
                               Navigator.of(context).pushAndRemoveUntil(
                                   MaterialPageRoute(
                                       builder: (context) => Home()),
@@ -138,6 +169,7 @@ class Finsih extends StatelessWidget {
                             icon: Icon(
                               FontAwesomeIcons.solidCheckCircle,
                               color: Color.fromRGBO(68, 193, 141, 1),
+                              size: 40,
                             ))
                       ],
                     ),

@@ -1,4 +1,4 @@
-import 'package:final_project_dicoding/View/MainView.dart';
+import 'package:final_project_dicoding/View/Journey.dart';
 import 'package:final_project_dicoding/model/Recipe.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -50,7 +50,7 @@ class RecipeSearchController extends SearchDelegate<Recipe> {
           child: InkWell(
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return MainView(
+                return Journey(
                   stream: streamController.stream,
                   recipe: recipe,
                 );

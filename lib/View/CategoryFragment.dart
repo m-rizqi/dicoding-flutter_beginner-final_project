@@ -1,5 +1,5 @@
 import 'package:final_project_dicoding/View/DetailFragment.dart';
-import 'package:final_project_dicoding/View/MainView.dart';
+import 'package:final_project_dicoding/View/Journey.dart';
 import 'package:final_project_dicoding/controller/RecipeSearchController.dart';
 import 'package:final_project_dicoding/model/Recipe.dart';
 import 'package:flutter/cupertino.dart';

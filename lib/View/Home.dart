@@ -1,5 +1,5 @@
 // @dart=2.9
-import 'package:final_project_dicoding/View/MainView.dart';
+import 'package:final_project_dicoding/View/Journey.dart';
 import 'package:final_project_dicoding/model/Recipe.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -155,7 +155,7 @@ class Home extends StatelessWidget {
             child: FloatingActionButton.extended(
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return MainView(stream: streamController.stream);
+                  return Journey(stream: streamController.stream);
                 }));
               },
               backgroundColor: Color.fromRGBO(240, 202, 32, 1),
@@ -199,7 +199,7 @@ class _OnTopSectionState extends State<OnTopSection> {
       child: InkWell(
         onTap: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return MainView(stream : streamController.stream, recipe: onTopList[index],);
+            return Journey(stream : streamController.stream, recipe: onTopList[index],);
           }));
         },
         child: Card(
@@ -488,7 +488,7 @@ class _ChoiceChipSectionState extends State<ChoiceChipSection> {
                     onTap: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) {
-                        return MainView(stream : streamController.stream, recipe: _selectedList[index],);
+                        return Journey(stream : streamController.stream, recipe: _selectedList[index],);
                       }));
                     },
                     child: Card(

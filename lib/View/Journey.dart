@@ -38,18 +38,18 @@ Widget bottomContent = Column(
   ],
 );
 
-class MainView extends StatefulWidget {
+class Journey extends StatefulWidget {
   final Stream<int> stream;
   Recipe? recipe;
-  MainView({required this.stream, this.recipe}) {
+  Journey({required this.stream, this.recipe}) {
     publicRecipe = this.recipe;
   }
 
   @override
-  _MainViewState createState() => _MainViewState();
+  _JourneyState createState() => _JourneyState();
 }
 
-class _MainViewState extends State<MainView> {
+class _JourneyState extends State<Journey> {
   Widget fragment = CategoryFragment();
 
   @override

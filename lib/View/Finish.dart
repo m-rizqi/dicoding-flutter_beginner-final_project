@@ -1,5 +1,5 @@
 import 'package:final_project_dicoding/View/Home.dart';
-import 'package:final_project_dicoding/View/MainView.dart';
+import 'package:final_project_dicoding/View/Journey.dart';
 import 'package:final_project_dicoding/model/Recipe.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';

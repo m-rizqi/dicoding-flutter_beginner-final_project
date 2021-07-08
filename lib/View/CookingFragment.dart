@@ -1,4 +1,4 @@
-import 'package:final_project_dicoding/View/MainView.dart';
+import 'package:final_project_dicoding/View/Journey.dart';
 import 'package:final_project_dicoding/model/Recipe.dart';
 import 'package:flutter/material.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';

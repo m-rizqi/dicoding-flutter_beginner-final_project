@@ -62,19 +62,21 @@ class _JourneyState extends State<Journey> {
 
   void fragmentSetState(int index) {
     int fragmentIndex = 0;
-    Recipe? recipe = null;
     if (index == 0) {
     } else if (index == 2 || index == 3 || index == 4) {
       fragmentIndex = index - 1;
+    } else if (index.toString().substring(0, 1) == "7") {
+      fragmentIndex = 1;
+      index = int.parse(index.toString().substring(1));
+      publicRecipe = allRecipes[index];
     } else {
       String key = index.toString();
       fragmentIndex = int.parse(key.substring(0, 1));
-      fragmentIndex -= 1;
+      fragmentIndex = 1;
       int keyList = int.parse(key.substring(1, 3));
       List<Recipe> recipeList = allList[keyList];
       int keyProduct = int.parse(key.substring(3, 5));
-      recipe = recipeList[keyProduct];
-      publicRecipe = recipe;
+      publicRecipe = recipeList[keyProduct];
     }
     List<Widget> fragmentList = [
       CategoryFragment(),
@@ -221,7 +223,9 @@ class _JourneyState extends State<Journey> {
           ),
         ),
       ),
-      Expanded(child: Container(),),
+      Expanded(
+        child: Container(),
+      ),
     ];
 
     setState(() {

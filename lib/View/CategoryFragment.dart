@@ -314,6 +314,9 @@ class _CategoryFragmentState extends State<CategoryFragment> {
                         margin: EdgeInsets.symmetric(vertical: 4),
                         child: InkWell(
                           onTap: () {
+                            keyProduct = (index ~/ 10) == 1
+                                ? index.toString()
+                                : '0' + index.toString();
                             String temp = "2" + keyList + keyProduct;
                             int key = int.parse(temp);
                             streamController.add(key);

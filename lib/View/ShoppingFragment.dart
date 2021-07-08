@@ -31,10 +31,10 @@ class _ShoppingFragmentState extends State<ShoppingFragment> {
     var _crossAxisSpacing = 2;
     var _screenWidth = MediaQuery.of(context).size.width;
     var _crossAxisCount = 2;
-    var _width = (_screenWidth - ((_crossAxisCount - 1) * _crossAxisSpacing)) /
+    var _width =(_screenWidth - ((_crossAxisCount - 1) * _crossAxisSpacing)) /
         _crossAxisCount;
     var cellHeight = 50;
-    var _aspectRatio = _width / cellHeight;
+    var _aspectRatio = (_width / cellHeight);
     return WillPopScope(
         onWillPop: willPopBack,
         child: SingleChildScrollView(
@@ -95,13 +95,14 @@ class _ShoppingFragmentState extends State<ShoppingFragment> {
                       Container(
                         child: GridView.builder(
                           padding: EdgeInsets.only(
-                              left: 5.0, right: 5.0, top: 10, bottom: 10),
+                              top: 10, bottom: 10
+                              ),
                           shrinkWrap: true,
                           itemCount: ingredientKeys?.length ?? 0,
                           gridDelegate:
                               SliverGridDelegateWithFixedCrossAxisCount(
                                   crossAxisCount: _crossAxisCount,
-                                  childAspectRatio: _aspectRatio),
+                                  childAspectRatio: _aspectRatio,),
                           itemBuilder: (context, index) {
                             String e = ingredientKeys?[index]?? '';
                             return Row(

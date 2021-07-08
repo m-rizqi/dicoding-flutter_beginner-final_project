@@ -56,7 +56,6 @@ class Finish extends StatelessWidget {
                   elevation: 10,
                   child: Container(
                     width: 300,
-                    height: 480,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(40)),
                       color: Colors.white,
@@ -133,7 +132,7 @@ class Finish extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          height: 30,
+                          height: 25,
                         ),
                         IconButton(
                             onPressed: () {
@@ -170,7 +169,8 @@ class Finish extends StatelessWidget {
                               FontAwesomeIcons.solidCheckCircle,
                               color: Color.fromRGBO(68, 193, 141, 1),
                               size: 40,
-                            ))
+                            )),
+                        SizedBox(height: 20,)
                       ],
                     ),
                   ),

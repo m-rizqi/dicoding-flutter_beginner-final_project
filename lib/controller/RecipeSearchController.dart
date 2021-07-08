@@ -38,7 +38,9 @@ class RecipeSearchController extends SearchDelegate<Recipe> {
     if (query.isEmpty) {
       recipeList = allRecipes;
     } else {
-      recipeList = allRecipes.where((element) => element.name.toLowerCase().trim().contains(query)).toList();
+      recipeList = allRecipes
+          .where((element) => element.name.toLowerCase().trim().contains(query))
+          .toList();
     }
     return ListView.builder(
       itemCount: recipeList.length,
@@ -52,7 +54,7 @@ class RecipeSearchController extends SearchDelegate<Recipe> {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
                 return Journey(
                   stream: streamController.stream,
-                  recipe: recipe,
+                  recipe: recipeList[index],
                 );
               }));
             },

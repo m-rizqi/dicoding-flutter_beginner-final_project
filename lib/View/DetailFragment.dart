@@ -10,7 +10,7 @@ class DetailFragment extends StatelessWidget {
 
   Future<bool> willPopBack() async {
     streamController.add(0);
-    return true;
+    return false;
   }
 
   @override

@@ -23,7 +23,7 @@ class _ShoppingFragmentState extends State<ShoppingFragment> {
 
   Future<bool> willPopBack() async {
     streamController.add(2);
-    return true;
+    return false;
   }
 
   @override
@@ -126,6 +126,7 @@ class _ShoppingFragmentState extends State<ShoppingFragment> {
                                   children: [
                                     Text(
                                       e,
+                                      textAlign: TextAlign.justify,
                                       style: TextStyle(
                                         fontFamily: 'Poppins',
                                         fontWeight: FontWeight.w500,

@@ -47,7 +47,7 @@ class _CookingFragmentState extends State<CookingFragment> {
 
   Future<bool> willPopBack() async {
     streamController.add(3);
-    return true;
+    return false;
   }
 
   @override

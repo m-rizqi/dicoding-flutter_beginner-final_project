@@ -1163,4 +1163,4 @@ List<List<Recipe>> allList = [
   veganRecipeList,
   beverageRecipeList,
 ];
-List<String> nameAllList = ["Recommended", "Easy", "Vegan", "Meal", "Juicy"];
+List<String> nameAllList = ["Recommended", "Easy", "Meal", "Vegan", "Juicy"];
